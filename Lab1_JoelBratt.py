@@ -1,5 +1,6 @@
 import math
 import circle as c
+import rectangle as r
 """
 Geomtery Calc
 Joel Bratt
@@ -29,7 +30,14 @@ while selection != 5:
         circle_circumference = c.circle_circumference(radius)
         print(f'Circle circumference is {circle_circumference:.2f}')
     
+    elif selection == 3:
+        width = float(input("Input width: "))
+        height = float(input("input height: "))
+        rectangle_area = r.rectangle_area(width, height)
+        print(f'Rectangle area is {rectangle_area:.2f}')
     
+
+
 
 
 
