@@ -23,7 +23,13 @@ while selection != 5:
         radius = float(input("Input radius: "))
         circle_area = c.circle_area(radius)
         print(f"Circle area is {circle_area:.2f} .")
-        
+    
+    elif selection == 2:
+        radius = float(input("Input radius: "))
+        circle_circumference = c.circle_circumference(radius)
+        print(f'Circle circumference is {circle_circumference:.2f}')
+    
+    
 
 
 
