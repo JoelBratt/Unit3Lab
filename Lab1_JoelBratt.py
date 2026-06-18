@@ -35,6 +35,12 @@ while selection != 5:
         height = float(input("input height: "))
         rectangle_area = r.rectangle_area(width, height)
         print(f'Rectangle area is {rectangle_area:.2f}')
+
+    elif selection == 4:
+        width = float(input("Input width: "))
+        height = float(input("input height: "))
+        rectangle_perimeter = r.rectangle_perimeter(width, height)
+        print(f'Rectangle perimeter is {rectangle_perimeter:.2f}')
     
 
 
