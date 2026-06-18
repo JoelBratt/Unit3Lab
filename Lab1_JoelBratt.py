@@ -5,7 +5,11 @@ import rectangle as r
 Geomtery Calc
 Joel Bratt
 Calculates Circle Area and Circumference as well as retangle Area and Perimiter
+6/17/2026
 """
+
+#Aliases are used in the case of both files sharing a function name so the program knows which one to use.
+
 selection = 0
 while selection != 5:
     print("Geometry Calculator \n" \
@@ -41,6 +45,8 @@ while selection != 5:
         height = float(input("input height: "))
         rectangle_perimeter = r.rectangle_perimeter(width, height)
         print(f'Rectangle perimeter is {rectangle_perimeter:.2f}')
+
+
     
 
 
