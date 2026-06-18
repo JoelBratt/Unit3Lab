@@ -1,3 +1,5 @@
+import math
+import circle as c
 """
 Geomtery Calc
 Joel Bratt
@@ -11,12 +13,17 @@ while selection != 5:
     "2. Calculate Circle Circumference \n" \
     "3. Calculate Retangle Area \n" \
     "4. Calculate Retangle Perimiter \n" \
-    "5. Exit \n" \
-    "Enter your selection 1-5" )
+    "5. Exit \n"  )
 
-    selection = input(int)
+    selection = int(input("Enter your selection 1-5 "))
 
     print(f"{selection} Great Choice!")
+    
+    if selection == 1:
+        radius = float(input("Input radius: "))
+        circle_area = c.circle_area(radius)
+        print(f"Circle area is {circle_area:.2f} .")
+        
 
 
 
